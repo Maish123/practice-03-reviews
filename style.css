@@ -41,8 +41,8 @@ Variables
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
+  --spacing: 0.15rem;
+  --radius: 0.7rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
@@ -175,7 +175,6 @@ main {
 
 .review:hover {
     box-shadow: var(--dark-shadow);
-    cursor: pointer;
 }
 
 .img-container{
@@ -223,3 +222,53 @@ main {
     border-radius: 50%;
 }
 
+#author{
+    margin-bottom: 0.25rem;
+    letter-spacing: var(--spacing);
+}
+
+#job{
+    margin-bottom: 0.5rem; 
+    text-transform: uppercase;
+    color: var(--clr-primary-5);
+    font-size: 0.85rem;
+    letter-spacing: var(--spacing);
+}
+
+#info {
+    margin-bottom: 0.75rem;
+}
+
+.prev-btn,
+.next-btn {
+    color: var(--clr-primary-7);
+    font-size: 1.3rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover{
+    color: var(--clr-primary-1);
+}
+
+.random-btn{
+    margin-top: 0.5rem;  
+    background: var(--clr-primary-10);
+    color: var(--clr-primary-5);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    border-color: var(--clr-primary-5);
+    cursor: pointer;
+}
+
+.random-btn:hover{
+    background: var(--clr-primary-5);
+    color: white;
+}
